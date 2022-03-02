@@ -136,7 +136,14 @@ module.exports = {
     'switch-colon-spacing': 'warn',
     // 强制箭头函数的箭头前后使用一致的空格
     'arrow-spacing': 'warn',
-    'no-var': 'warn',
+    'one-var': [
+      'error',
+      {
+        var: 'always', // 每个函数作用域中，只允许 1 个 var 声明
+        let: 'never', // 每个块作用域中，允许多个 let 声明
+        const: 'never', // 每个块作用域中，允许多个 const 声明
+      },
+    ],
     'prefer-const': 'warn',
     'prefer-rest-params': 'warn',
     'no-useless-escape': 'warn',
