@@ -3,7 +3,6 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
-const count = ref(0)
 </script>
 
 <template>
